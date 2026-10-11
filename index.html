@@ -8,23 +8,19 @@
   <link rel="icon" href="https://avatars.githubusercontent.com/u/114678267?v=4">
   <style>
     :root {
-      --bg: #f7f7f5;
-      --card: #ffffff;
+      --bg: #ffffff;
       --text: #1c1c1e;
       --muted: #6b6b70;
       --border: #e4e4e0;
       --accent: #3b5bdb;
-      --chip: #eef1fb;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #111214;
-        --card: #1a1b1e;
         --text: #ececee;
         --muted: #9a9aa2;
         --border: #2a2b30;
         --accent: #7c95ff;
-        --chip: #22263a;
       }
     }
     * { box-sizing: border-box; }
@@ -43,7 +39,7 @@
     .avatar {
       width: 112px; height: 112px;
       border-radius: 50%;
-      border: 3px solid var(--card);
+      border: 3px solid var(--bg);
       box-shadow: 0 0 0 1px var(--border);
     }
     h1 { margin: 16px 0 4px; font-size: 1.9rem; letter-spacing: -0.02em; }
@@ -51,7 +47,6 @@
     .bio { max-width: 480px; margin: 14px auto 0; }
     .card {
       padding: 16px;
-      background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
     }
@@ -73,7 +68,6 @@
     .links a {
       display: flex; align-items: center; gap: 14px;
       padding: 14px 16px;
-      background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
       color: var(--text);
@@ -89,7 +83,6 @@
     .degrees { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
     .degrees li {
       padding: 14px 16px;
-      background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
     }
@@ -100,7 +93,7 @@
     .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
     .skills li {
       padding: 6px 12px;
-      background: var(--chip);
+      border: 1px solid var(--border);
       color: var(--text);
       border-radius: 999px;
       font-size: 0.92rem;
@@ -178,11 +171,11 @@
       <ul class="degrees">
         <li>
           <div class="top"><span class="title">M.Sc. in Computer Science</span><span class="year">2026</span></div>
-          <div class="meta">University of Liège · Magna Cum Laude · obtained at 21</div>
+          <div class="meta">University of Liège  (Magna Cum Laude) obtained at 21</div>
         </li>
         <li>
           <div class="top"><span class="title">B.Sc. in Computer Science</span><span class="year">2024</span></div>
-          <div class="meta">University of Liège · Magna Cum Laude · obtained at 19</div>
+          <div class="meta">University of Liège  (Magna Cum Laude) obtained at 19</div>
         </li>
       </ul>
     </section>
